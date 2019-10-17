@@ -4,7 +4,7 @@
 class Caracteristique {
   private $intitule;  // Nom de la caractéristique
   private $unite;     // Unité de la caractéristique
-  private $valeur     // Valeur de la caractéristique
+  private $valeur;     // Valeur de la caractéristique
 
   //Getteurs
 

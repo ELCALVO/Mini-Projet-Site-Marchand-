@@ -9,17 +9,17 @@ $dao = new DAO();
 $categories = $dao->getCategories();
 
 //Affichage des trois premières categories
-for($i=0;$i=<3;$i++){
-  $cat=$categories[$i];
-  while($cat->getCategorieM()->getId()!=1){
-    echo "\t";
-    foreach ($categories as $value) {
-      if($value->getId()==$cat->getCategorieM()->getId()){
-        $cat = $value;
+foreach ($categories as $value) {
+  $cat=$value;
+  while($cat->getCategorieM()!=$cat->getId()){
+    echo "-----";
+    foreach ($categories as $val) {
+      if($val->getId()==$cat->getCategorieM()){
+        $cat = $val;
       }
     }
   }
-  echo $cat->getId()."|".$cat->getIntitule()."\n";
+  echo ">".$value->getId()."|".$value->getIntitule()."<br>";
 }
 
  ?>

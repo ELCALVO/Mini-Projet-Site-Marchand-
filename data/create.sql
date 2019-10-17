@@ -1,3 +1,6 @@
+drop table article;
+drop table categorie;
+drop table caracteristique;
 
 
 CREATE TABLE caracteristique (
@@ -8,11 +11,11 @@ CREATE TABLE caracteristique (
     );
 
 CREATE TABLE categorie (
-  idCat INTEGER PRIMARY KEY,
+  id INTEGER PRIMARY KEY,
   intitule TEXT,
-  pere INTEGER,
+  categorieMere INTEGER,
   taxe REAL DEFAULT 0.2,
-  FOREIGN KEY(pere) REFERENCES categorie(idCat)
+  FOREIGN KEY(categorieMere) REFERENCES categorie(id)
   );
 
 
