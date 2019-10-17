@@ -1,3 +1,3 @@
-drop table article;
-drop table categorie;
-drop table caracteristique;
+DROP TABLE article;
+DROP TABLE categorie;
+DROP TABLE caracteristique;

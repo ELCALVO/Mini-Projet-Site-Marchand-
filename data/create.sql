@@ -1,4 +1,6 @@
-
+DROP TABLE article;
+DROP TABLE categorie;
+DROP TABLE caracteristique;
 
 CREATE TABLE caracteristique (
     idCarac INTEGER PRIMARY KEY,

@@ -1,0 +1,30 @@
+header{
+  background-color: red;
+
+}
+
+h1{
+  color : red;
+}
+
+nav {
+    border-bottom: 1px solid black;
+}
+
+.menu ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.menu a::after {
+    display: inline-block;
+    color: #000;
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+}
