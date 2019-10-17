@@ -1,0 +1,47 @@
+1|Montre Connecté|7|1|1200000.0|Montre.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE article (
+  ref INTEGER PRIMARY KEY,
+  intitule TEXT,
+  categorie INTEGER,
+  caracteristique TEXT,
+  texteDescriptif TEXT,
+  prixU_HT REAL,
+  image TEXT,
+  FOREIGN KEY(categorie) REFERENCES categorie(idCat),
+  FOREIGN KEY(categorie) REFERENCES caracteristique(idCarac)
+  );
