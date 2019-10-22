@@ -8,28 +8,21 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <style>
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-    width: 25%;
-    margin: auto;
-  }
-  </style>
+
 </head>
 <body>
   <header>
     <h1>NOM DU SITE</h1>
-    <nav class="menu">
-    <ol>
-        <li class="menu"><a href="bikes">Catégories</a></li>
-        <li class="menu"><a href="bikes/bmx">Mon Compte</a></li>
-        <li class="menu">Contactez-Nous</li>
-    </ol>
-</nav>
-
+  <nav>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li style="float:right"><a href="#about">About</a></li>
+    </ul>
+  </nav>
 
   </header>
-
 
   <div class="container">
     <h2>Découvrez nos produits :</h2>
@@ -88,6 +81,112 @@
       </a>
     </div>
   </div>
+
+<div class="affichage">
+
+
+  <div class="Categorie"
+    <article class="Art1">
+      <div class="headCategorie">
+        <h2> Nos catégories</h2>
+      </div>
+
+      <div class="containerCategorie">
+        <div class="premiereLigne">
+            <div class="premierItem">
+              <div class="Image">
+                <img src="../ressources/iPhone11.jpg" alt="test">
+              </div>
+                <div class="Nom">
+                <p>High-Tech</p>
+              </div>
+            </div>
+            <div class="deuxiemeItem">
+              <div class="Image">
+                <img src="../ressources/fauteuilMassant1.jpg" alt="test">
+              </div>
+                <div class="Nom">
+                <p>Mobilier</p>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="premiereLigne">
+            <div class="premierItem">
+              <div class="Image">
+                <img src="../ressources/frigoSamsung.jpg" alt="test">
+              </div>
+                <div class="Nom">
+                <p>Eléctro-Ménager</p>
+              </div>
+            </div>
+            <div class="deuxiemeItem">
+              <div class="Image">
+                <img src="../ressources/rolex1.jpeg" alt="test">
+              </div>
+                <div class="a-section a-spacing-none a-text-center image-label truncate-2line">
+                <p>Bijoux</p>
+              </div>
+            </div>
+        </div>
+
+      </div>
+
+    </article>
+  </div>
+
+  <div class="Produit"
+    <article class="Art1">
+      <div class="headCategorie">
+        <h2> Nos Articles</h2>
+      </div>
+
+      <div class="containerCategorie">
+        <div class="premiereLigne">
+            <div class="premierItem">
+              <div class="Image">
+                <img src="../ressources/iPhone11.jpg" alt="test">
+              </div>
+                <div class="Nom">
+                <p>iPhone11</p>
+              </div>
+            </div>
+            <div class="deuxiemeItem">
+              <div class="Image">
+                <img src="../ressources/fauteuilMassant1.jpg" alt="test">
+              </div>
+                <div class="Nom">
+                <p> le fauteuil Massant</p>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="premiereLigne">
+            <div class="premierItem">
+              <div class="Image">
+                <img src="../ressources/frigoSamsung.jpg" alt="test">
+              </div>
+                <div class="Nom">
+                <p>Frigo Samsung</p>
+              </div>
+            </div>
+            <div class="deuxiemeItem">
+              <div class="Image">
+                <img src="../ressources/rolex1.jpeg" alt="test">
+              </div>
+                <div class="a-section a-spacing-none a-text-center image-label truncate-2line">
+                <p>Montre Rolex</p>
+              </div>
+            </div>
+        </div>
+
+      </div>
+
+    </article>
+  </div>
+</div>
 
   <script>
   $(document).ready(function(){

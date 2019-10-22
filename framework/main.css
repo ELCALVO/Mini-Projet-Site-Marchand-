@@ -1,30 +1,76 @@
-header{
-  background-color: red;
+
+/* Header */
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 
 }
 
-h1{
-  color : red;
+ header nav li {
+  float: left;
+  border-right:1px solid #bbb;
+  text-decoration: none;
 }
 
-nav {
-    border-bottom: 1px solid black;
+header nav li:last-child {
+  border-right: none;
 }
 
-.menu ol {
-    list-style-type: none;
-    padding-left: 0;
+header nav li a {
+
+  display: block;
+  color: #bbb;;
+  background-color: #111;
+  text-align: center;
+  padding: 14px 16px;
+
+}
+header nav li a:hover {
+  background-color: #4CAF50;
 }
 
-.menu {
-    display: inline-block;
+
+/*Pour le carousel */
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 25%;
+  margin: auto;
 }
 
-.menu a::after {
-    display: inline-block;
-    color: #000;
-    content: '>';
-    font-size: 80%;
-    font-weight: bold;
-    padding: 0 3px;
+.container{
+  margin-bottom: 100px;
+}
+
+
+/*Categorie*/
+.Categorie{
+margin-left: 250px;
+
+
+}
+
+.premiereLigne{
+  display: flex;
+}
+
+.Image img{
+  width: 153.50px;
+  height: 150px;
+}
+.containerCategorie div div div p{
+  text-align: center;
+}
+
+.affichage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Produit{
+  margin-right: 250px;
 }
