@@ -4,10 +4,10 @@ drop table caracteristique;
 
 
 CREATE TABLE caracteristique (
-    idCarac INTEGER PRIMARY KEY,
+    id INTEGER PRIMARY KEY,
     intitule TEXT,
     unite TEXT,
-    valeur REAL
+    valeur REAL,
     refArticle INTEGER
     );
 

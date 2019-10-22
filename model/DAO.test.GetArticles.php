@@ -5,7 +5,7 @@ require_once('../model/DAO.class.php');
 //Création de l'objet DAO
 $dao = new DAO();
 
-//Test récuperation des catégories
+//Test récuperation des articles
 $categories = $dao->getCategories();
 $articles = $dao->getArticles();
 
