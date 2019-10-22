@@ -10,6 +10,10 @@ class Article {
   private $categorie;         // Catégorie de l'article
   private $caracteristiques;  // Caractéristiques de l'article
 
+  function __construct(){
+    $this->caracteristiques=array();
+  }
+
   //Getteurs
   function getRef() : int {
     return $this->ref;
@@ -43,6 +47,12 @@ class Article {
     return $this->caracteristiques[$n];
   }
 
-
+  function addCaracteristique(Caracteristique $car) : void {
+    $i=0;
+    foreach ($this->caracteristiques as $value) {
+      $i++;
+    }
+    $this->caracteristiques[$i]=$car;
+  }
 }
 ?>
