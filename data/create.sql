@@ -1,31 +1,32 @@
-DROP TABLE article;
-DROP TABLE categorie;
-DROP TABLE caracteristique;
+drop table article;
+drop table categorie;
+drop table caracteristique;
+
 
 CREATE TABLE caracteristique (
-    idCarac INTEGER PRIMARY KEY,
+    id INTEGER PRIMARY KEY,
     intitule TEXT,
     unite TEXT,
-    valeur REAL
+    valeur REAL,
+    refArticle INTEGER
     );
 
 CREATE TABLE categorie (
-  idCat INTEGER PRIMARY KEY,
+  id INTEGER PRIMARY KEY,
   intitule TEXT,
-  pere INTEGER,
+  categorieMere INTEGER,
   taxe REAL DEFAULT 0.2,
-  FOREIGN KEY(pere) REFERENCES categorie(idCat)
+  FOREIGN KEY(categorieMere) REFERENCES categorie(id)
   );
 
 
 CREATE TABLE article (
   ref INTEGER PRIMARY KEY,
   intitule TEXT,
-  categorie INTEGER,
-  caracteristique INTEGER,
   texteDescriptif TEXT,
-  prixU_HT REAL,
-  image TEXT,
+  prix REAL,
+  visuel TEXT,
+  categorie INTEGER,
   FOREIGN KEY(categorie) REFERENCES categorie(idCat),
   FOREIGN KEY(categorie) REFERENCES caracteristique(idCarac)
   );

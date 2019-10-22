@@ -1,1 +1,19 @@
-1|Volt|V|12.2
+1|Voltage|V|12.2|1
+2|Poids|kg|25|2
+3|Poids|kg|48|3
+4|Poids|kg|142|4
+5|Hauteur|cm|212|4
+6|Largeur|cm|180|4
+7|Longueur|cm|200|4
+8|Largeur|cm|45|5
+9|Longueur|cm|50|5
+10|Largeur|cm|150|6
+11|Longueur|cm|190|6
+12|Résolution|p|2160|7
+13|Taille|pouces|86|7
+14|Longueur|m|55|8
+15|Qualité|carats|18|8
+16|Tour de cou|cm|34|9
+17|Qualité|carats|24|9
+18|Tour de cou|cm|34|10
+19|Qualité|carats|24|10

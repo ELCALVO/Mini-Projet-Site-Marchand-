@@ -8,18 +8,19 @@ $dao = new DAO();
 //Test récuperation des catégories
 $categories = $dao->getCategories();
 
-//Affichage des trois premières categories
-for($i=0;$i=<3;$i++){
-  $cat=$categories[$i];
-  while($cat->getCategorieM()->getId()!=1){
-    echo "\t";
-    foreach ($categories as $value) {
-      if($value->getId()==$cat->getCategorieM()->getId()){
-        $cat = $value;
+//Affichage des categories
+foreach ($categories as $value) {
+  $cat=$value;
+  $s="";
+  while($cat->getCategorieM()!=$cat->getId()){
+    $s=$s."-----";
+    foreach ($categories as $val) {
+      if($val->getId()==$cat->getCategorieM()){
+        $cat = $val;
       }
     }
   }
-  echo $cat->getId()."|".$cat->getIntitule()."\n";
+  echo $s.">".$value->getId()."|".$value->getIntitule()."<br>";
 }
 
  ?>

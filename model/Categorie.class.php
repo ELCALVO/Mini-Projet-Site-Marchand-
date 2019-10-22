@@ -5,10 +5,10 @@ class Categorie {
   private $id;            // Identifiant de la catégorie
   private $intitule;      // Nom de la catégorie
   private $categorieMere; // Catégorie mère de la catégorie (elle même si elle n'en possède pas)
-  private $taxe           // Taux de TVA de la catégorie
+  private $taxe;           // Taux de TVA de la catégorie
 
   //Getteurs
-  function getId() : int {
+  function getId() : string {
     return $this->id;
   }
 
@@ -16,7 +16,7 @@ class Categorie {
     return $this->intitule;
   }
 
-  function getCategorieM() : Categorie {
+  function getCategorieM() : string {
     return $this->categorieMere;
   }
 
