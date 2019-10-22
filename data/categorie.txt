@@ -7,7 +7,7 @@
 7|Appareils Connectés|2|0.2
 8|Bijoux|1|0.2
 9|Bagues|8|0.2
-10|Coliers|8|0.2
+10|Colliers|8|0.2
 11|Mobilier|1|0.2
 12|Tables & Chaises|11|0.2
 13|Literie|11|0.2

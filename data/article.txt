@@ -1,1 +1,10 @@
-1|Montre Connecté|7|1|1200000.0|Montre.png
+1|Montre Connectée|Jolie montre|1200000.0|Montre.png|7
+2|Chaise|Jolie chaise|1000.0|Chaise.png|12
+3|Fauteuil|Joli fauteuil|5000.0|Fauteuil.png|12
+4|Lit à baldaquins|Joli lit|15500.0|Lit.png|13
+5|Coussin luxe|Joli coussin|523.0|Coussin.png|14
+6|Plaid luxe|Joli plaid|845.0|Plaid.png|14
+7|Tv écran incurvé|Jolie télé|4500.0|Tv.png|6
+8|Papier WC Or|Joli papier|150000.0|Papier.png|1
+9|Collier rubis|Joli collier rouge|8500.0|Collier_r.png|10
+10|Collier saphir|Joli collier bleu|8500.0|Collier_b.png|10

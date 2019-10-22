@@ -14,7 +14,7 @@ class Article {
   function getRef() : int {
     return $this->ref;
   }
-  
+
   function getIntitule() : string {
     return $this->intitule;
   }
@@ -31,7 +31,7 @@ class Article {
     return $this->visuel;
   }
 
-  function getCategorie() : Categorie {
+  function getCategorie() : int {
     return $this->categorie;
   }
 
@@ -39,7 +39,7 @@ class Article {
     return $this->caracteristiques;
   }
 
-  function getCaracteristiquesN(int $n) : Caracteristique {
+  function getCaracteristiquesN(int $n) : int {
     return $this->caracteristiques[$n];
   }
 

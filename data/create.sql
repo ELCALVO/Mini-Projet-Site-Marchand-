@@ -8,6 +8,7 @@ CREATE TABLE caracteristique (
     intitule TEXT,
     unite TEXT,
     valeur REAL
+    refArticle INTEGER
     );
 
 CREATE TABLE categorie (
@@ -22,11 +23,10 @@ CREATE TABLE categorie (
 CREATE TABLE article (
   ref INTEGER PRIMARY KEY,
   intitule TEXT,
-  categorie INTEGER,
-  caracteristique INTEGER,
   texteDescriptif TEXT,
-  prixU_HT REAL,
-  image TEXT,
+  prix REAL,
+  visuel TEXT,
+  categorie INTEGER,
   FOREIGN KEY(categorie) REFERENCES categorie(idCat),
   FOREIGN KEY(categorie) REFERENCES caracteristique(idCarac)
   );
