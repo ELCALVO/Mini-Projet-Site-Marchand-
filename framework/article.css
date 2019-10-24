@@ -1,13 +1,10 @@
+/* Fond du site*/
+
 body{
 background :linear-gradient( to bottom ,gray,silver,LightCyan,Snow    );
 }
 
-#pls img{
-  width: 250px;
-  height : 250px;
-}
-/* Header */
-
+/* Header barre de navigation */
 header nav ul {
   list-style-type: none;
   margin: 0;
@@ -45,8 +42,28 @@ header nav li a:hover {
 
 .article{
   display: flex;
+  margin-left: 200px;
+}
+.image img{
+  width: 500px;
+  height : 500px;
 }
 
 div h3{
   font-weight: bold;
+}
+div p{
+  margin-left: 50px;
+}
+
+div article{
+  margin-left: 25px;
+  display:flex;
+  padding :20px;
+
+}
+
+div article img{
+  width : 100px;
+  height: 100px;
 }

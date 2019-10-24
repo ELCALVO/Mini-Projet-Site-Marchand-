@@ -12,3 +12,4 @@
 12|Tables & Chaises|11|0.2
 13|Literie|11|0.2
 14|Coussin, plaid & pouf|13|0.2
+15|Textile|1|0.2

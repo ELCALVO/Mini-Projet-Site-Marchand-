@@ -16,7 +16,7 @@ class Categorie {
     return $this->intitule;
   }
 
-  function getCategorieM() : string {
+  function getCategorieM() : int {
     return $this->categorieMere;
   }
 
@@ -25,5 +25,13 @@ class Categorie {
   }
 
 
+  function afficherElements($array) : void{
+    foreach($array as $key){
+      $image = $key->getVisu();
+      $nom = $key->getIntitule();
+      echo"<h3> $nom</h3>";
+      echo"<img src=\"../ressources/$image\" alt=\"$nom\">";
+    }
+  }
 }
 ?>

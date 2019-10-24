@@ -15,7 +15,7 @@
     <h1>NOM DU SITE</h1>
   <nav>
     <ul>
-      <li><a class="active" href="#home">Acceuil</a></li>
+      <li><a class="active" href="../controler/main.ctrl.php">Acceuil</a></li>
       <li><a href="#Categorie">Catégorie</a></li>
       <li><a href="#panier">Panier</a></li>
       <li style="float:right"><a href="#about">Contactez-Nous</a></li>
@@ -31,7 +31,7 @@
      </div>
 
      <div class="descArticle">
-       <h2><?= $article->getIntitule() ?></h2>
+       <h2><?= $article->getIntitule() ?> de la catégorie : <a href="../controler/categorie?Id=<?= $categorie->getId()?>"><?= $categorie->getIntitule() ?></a> </h2> <br> <br> <br> 
 
        <h3>Description</h3>
        <p><?= $article->getTexteD() ?></p>
@@ -44,11 +44,37 @@
 
      </div>
 
-
-
-
-
     </div>
 
+
+    <div class="Commentaires">
+      <h3>Avis des acheteurs :</h3> <br> <br> <br>
+        <p>Serena345</p>
+        <article class="User1">
+          <img src="../ressources/author-image1.jpg" alt="Utilisateur 1" >
+          <p>Ce <?= $article->getIntitule()?> est incroyable, je ne peux plus m'en passer</p>
+        </article>
+
+        <p>MichelDu42</p>
+
+        <article class="User2">
+            <img src="../ressources/author-image2.jpg" alt="Utilisateur 2" >
+            <p>Mon fils m'a acheté ce <?= $article->getIntitule()?> à vrai dire je n'était pas convaincu au début. Maintenant il est devenu indispensable</p>
+        </article>
+
+        <p>Toto974</p>
+
+        <article class="User3">
+            <img src="../ressources/comment-image1.jpg" alt="Utilisateur 3" >
+            <p>Ce produit est incroyable, je ne peux plus m'en passer</p>
+        </article>
+
+        <p>LéaPassionCheval</p>
+
+        <article class="User4">
+          <img src="../ressources/comment-image2.jpg" alt="Utilisateur 4" >
+          <p>Ce produit est incroyable, je ne peux plus m'en passer</p>
+        </article>
+    </div>
 </body>
 </html>
