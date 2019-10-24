@@ -15,10 +15,10 @@
     <h1>NOM DU SITE</h1>
   <nav>
     <ul>
-      <li><a class="active" href="#home">Home</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li style="float:right"><a href="#about">About</a></li>
+      <li><a class="active" href="#home">Acceuil</a></li>
+      <li><a href="#Categorie">Catégorie</a></li>
+      <li><a href="#panier">Panier</a></li>
+      <li style="float:right"><a href="#about">Contactez-Nous</a></li>
     </ul>
   </nav>
 
@@ -36,35 +36,35 @@
       </ol>
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="../ressources/iPhone11.jpg" alt="Chania" width="460" height="345">
+        <div class="item active" id="pls">
+          <img src="../ressources/iphone12.png" alt="iphone" width="300px" height="300px">
           <div class="carousel-caption">
             <h3>iPhone 11 Pro Max 512 Go</h3>
-            <p>The iPhone 11 Pro Max 512 Go is one of the greatest smartphone on the market</p>
+            <p>L'iPhone 11 Pro Max 512 Go est l'un des meilleurs smartphone disponible sur le marché</p>
           </div>
         </div>
 
         <div class="item">
-          <img src="../ressources/iPhone11.jpg" alt="Chania" width="460" height="345">
+          <img src="../ressources/fauteuilMassant2.png" alt="Fauteuil Massant" width="250px" height="250px">
           <div class="carousel-caption">
-            <h3>Chania</h3>
-            <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+            <h3>Fauteuil Massant</h3>
+            <p>Ce fauteuil Massant sera là pour vous apres une longue journée de travail.</p>
           </div>
         </div>
 
         <div class="item">
-          <img src="../ressources/iPhone11.jpg" alt="Flower" width="460" height="345">
+          <img src="../ressources/Frigo1.png" alt="Flower" width="400px" height="400px">
           <div class="carousel-caption">
-            <h3>Flowers</h3>
-            <p>Beautiful flowers in Kolymbari, Crete.</p>
+            <h3>Frigo connecté</h3>
+            <p>Ce frigo connecté est à la pointe de la technologie.</p>
           </div>
         </div>
 
         <div class="item">
-          <img src="../ressources/iPhone11.jpg" alt="Flower" width="460" height="345">
+          <img src="../ressources/bijou1.png" alt="Flower" width="300px" height="250px">
           <div class="carousel-caption">
-            <h3>Flowers</h3>
-            <p>Beautiful flowers in Kolymbari, Crete.</p>
+            <h3>Bague en diamant</h3>
+            <p>Magnifique bague ornée de diamants.</p>
           </div>
         </div>
 
@@ -95,18 +95,18 @@
         <div class="premiereLigne">
             <div class="premierItem">
               <div class="Image">
-                <img src="../ressources/iPhone11.jpg" alt="test">
+              <a href="#High-Tech"> <img src="../ressources/iphone12.png" alt="iPhone 11 pro max"> </a>
               </div>
                 <div class="Nom">
-                <p>High-Tech</p>
+                <a href="#High-Tech"><p>High-Tech</p></a>
               </div>
             </div>
             <div class="deuxiemeItem">
               <div class="Image">
-                <img src="../ressources/fauteuilMassant1.jpg" alt="test">
+                <a href="#Mobilier">  <img src="../ressources/fauteuilMassant2.png" alt="fauteuil Massant"> </a>
               </div>
                 <div class="Nom">
-                <p>Mobilier</p>
+                <a href="#Mobilier"> <p>Mobilier</p> </a>
               </div>
             </div>
         </div>
@@ -115,18 +115,18 @@
         <div class="premiereLigne">
             <div class="premierItem">
               <div class="Image">
-                <img src="../ressources/frigoSamsung.jpg" alt="test">
+              <a href="#Electro-Menager"> <img src="../ressources/Frigo1.png" alt="test"> </a>
               </div>
                 <div class="Nom">
-                <p>Eléctro-Ménager</p>
+                  <a href="#Electro-Menager"><p>Eléctro-Ménager</p> </a>
               </div>
             </div>
             <div class="deuxiemeItem">
               <div class="Image">
-                <img src="../ressources/rolex1.jpeg" alt="test">
+                <a href="#Bijoux">  <img src="../ressources/bijou1.png" alt="test"> </a>
               </div>
                 <div class="a-section a-spacing-none a-text-center image-label truncate-2line">
-                <p>Bijoux</p>
+                <a href="#Bijoux"> <p>Bijoux</p></a>
               </div>
             </div>
         </div>
@@ -146,15 +146,15 @@
         <div class="premiereLigne">
             <div class="premierItem">
               <div class="Image">
-                <img src="../ressources/iPhone11.jpg" alt="test">
+                <a href="#iPhone11">  <img src="../ressources/iphone12.png" alt="test"> </a>
               </div>
                 <div class="Nom">
-                <p>iPhone11</p>
+                <a href="#Categories-HighTech">High-Tech</a>
               </div>
             </div>
             <div class="deuxiemeItem">
               <div class="Image">
-                <img src="../ressources/fauteuilMassant1.jpg" alt="test">
+                <a href="#Mobilier"><img src="../ressources/fauteuilMassant2.png" alt="Mobilier Image"></a>
               </div>
                 <div class="Nom">
                 <p> le fauteuil Massant</p>
@@ -166,18 +166,18 @@
         <div class="premiereLigne">
             <div class="premierItem">
               <div class="Image">
-                <img src="../ressources/frigoSamsung.jpg" alt="test">
+              <a href="#frigo">  <img src="../ressources/Frigo1.png" alt="test"></a>
               </div>
                 <div class="Nom">
-                <p>Frigo Samsung</p>
+                <a href="#Frigo1"> <p>Frigo connecté</p> </a>
               </div>
             </div>
             <div class="deuxiemeItem">
               <div class="Image">
-                <img src="../ressources/rolex1.jpeg" alt="test">
+                <img src="../ressources/bijou1.png" alt="test">
               </div>
                 <div class="a-section a-spacing-none a-text-center image-label truncate-2line">
-                <p>Montre Rolex</p>
+                <p>Bague en diamant</p>
               </div>
             </div>
         </div>
