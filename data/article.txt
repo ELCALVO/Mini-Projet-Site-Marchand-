@@ -7,4 +7,4 @@
 7|Tv écran incurvé|Jolie télé|4500.0|Tv.png|6
 8|Papier WC Or|Joli papier|150000.0|Papier.png|1
 9|Collier rubis|Joli collier rouge|8500.0|Collier_r.png|10
-10|Collier saphir|Joli collier bleu|8500.0|Collier_b.png|10
+10|Collier émeraude|Joli collier vert|8500.0|Collier_v.png|10

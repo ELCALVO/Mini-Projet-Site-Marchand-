@@ -19,5 +19,11 @@ for ($i =0;$i<4;$i++){
   $artCarousel[$i]=$articles[$i];
 }
 
+$catAccueil = array()
+$catAccueil[0]=$categories[3];
+$catAccueil[1]=$categories[5];
+$catAccueil[2]=$categories[10];
+$catAccueil[3]=$categories[12];
+
 include('../view/main.view.php');
  ?>
