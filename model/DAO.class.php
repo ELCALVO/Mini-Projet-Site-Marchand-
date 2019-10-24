@@ -36,7 +36,7 @@ class DAO{
     return $articles;
   }
 
-  //Fonction pour réuperer toutes les catégories
+  //Fonction pour réuperer toutes les caractéristiques
   function getCaracteristiques() : array {
     $req = "SELECT * FROM caracteristique";
     $resultat = $this->db->query($req);

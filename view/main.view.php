@@ -16,7 +16,7 @@
   <nav>
     <ul>
       <li><a class="active" href="#home">Acceuil</a></li>
-      <li><a href="#Categorie">Catégorie</a></li>
+      <li><a href="#Categorie">Catégories</a></li>
       <li><a href="#panier">Panier</a></li>
       <li style="float:right"><a href="#about">Contactez-Nous</a></li>
     </ul>
@@ -146,18 +146,18 @@
         <div class="premiereLigne">
             <div class="premierItem">
               <div class="Image">
-                <a href="#iPhone11">  <img src="../ressources/iphone12.png" alt="test"> </a>
+                <a href="../controler/article.ctrl.php?ref=<?=$artVitrine[0]->getRef() ?>"> <img src="../ressources/<?= $artVitrine[0]->getVisu() ?>" alt=<?= $artVitrine[0]->getIntitule() ?> </a>
               </div>
                 <div class="Nom">
-                <a href="#Categories-HighTech">High-Tech</a>
+                  <a href="../controler/article.ctrl.php?ref=<?=$artVitrine[0]->getRef() ?>"> <p><?= $artVitrine[0]->getIntitule() ?></p></a>
               </div>
             </div>
             <div class="deuxiemeItem">
               <div class="Image">
-                <a href="#Mobilier"><img src="../ressources/fauteuilMassant2.png" alt="Mobilier Image"></a>
+                <a href="../controler/article.ctrl.php?ref=<?=$artVitrine[1]->getRef() ?>">  <img src="../ressources/<?= $artVitrine[1]->getVisu() ?>" alt=<?= $artVitrine[1]->getIntitule() ?> </a>
               </div>
                 <div class="Nom">
-                <p> le fauteuil Massant</p>
+                <a href="../controler/article.ctrl.php?ref=<?=$artVitrine[1]->getRef() ?>"> <p><?= $artVitrine[1]->getIntitule() ?></p> </a>
               </div>
             </div>
         </div>
@@ -166,18 +166,18 @@
         <div class="premiereLigne">
             <div class="premierItem">
               <div class="Image">
-              <a href="#frigo">  <img src="../ressources/Frigo1.png" alt="test"></a>
+                <a href="../controler/article.ctrl.php?ref=<?=$artVitrine[2]->getRef() ?>">  <img src="../ressources/<?= $artVitrine[2]->getVisu() ?>" alt=<?= $artVitrine[2]->getIntitule() ?> </a>
               </div>
                 <div class="Nom">
-                <a href="#Frigo1"> <p>Frigo connecté</p> </a>
+                <a href="../controler/article.ctrl.php?ref=<?=$artVitrine[2]->getRef() ?>"> <p><?= $artVitrine[2]->getIntitule() ?></p> </a>
               </div>
             </div>
             <div class="deuxiemeItem">
               <div class="Image">
-                <img src="../ressources/bijou1.png" alt="test">
+                <a href="../controler/article.ctrl.php?ref=<?=$artVitrine[2]->getRef() ?>">  <img src="../ressources/<?= $artVitrine[3]->getVisu() ?>" alt=<?= $artVitrine[3]->getIntitule() ?> </a>
               </div>
                 <div class="a-section a-spacing-none a-text-center image-label truncate-2line">
-                <p>Bague en diamant</p>
+                <a href="../controler/article.ctrl.php?ref=<?=$artVitrine[3]->getRef() ?>"> <p><?= $artVitrine[3]->getIntitule() ?></p> </a>
               </div>
             </div>
         </div>

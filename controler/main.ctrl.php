@@ -19,6 +19,14 @@ for ($i =0;$i<4;$i++){
   $artCarousel[$i]=$articles[$i];
 }
 
+//Articles Aléatoires pour la section aléatoires de présentation de nos articles.
+$artVitrine = array();
+shuffle($articles);
+for ($i =0;$i<4;$i++){
+  $artVitrine[$i]=$articles[$i];
+}
+
+
 $catAccueil = array();
 foreach ($articles as $value) {
   $cat=$value->getCategorie();

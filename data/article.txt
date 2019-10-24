@@ -1,10 +1,10 @@
 1|Montre Connectée|Jolie montre|1200000.0|Montre.png|7
-2|Chaise|Jolie chaise|1000.0|Chaise.png|12
-3|Fauteuil|Joli fauteuil|5000.0|Fauteuil.png|12
-4|Lit à baldaquins|Joli lit|15500.0|Lit.png|13
-5|Coussin luxe|Joli coussin|523.0|Coussin.png|14
-6|Plaid luxe|Joli plaid|845.0|Plaid.png|14
-7|Tv écran incurvé|Jolie télé|4500.0|Tv.png|6
-8|Papier WC Or|Joli papier|150000.0|Papier.png|1
-9|Collier rubis|Joli collier rouge|8500.0|Collier_r.png|10
-10|Collier émeraude|Joli collier vert|8500.0|Collier_v.png|10
+2|Chaise|Chaise extremement confortable, avec un repose tête, qualité premium|1000.0|Chaise.png|12
+3|Fauteuil|Fauteuil massant disposant d'une tablette connecté|5000.0|Fauteuil.png|12
+4|Lit à baldaquins|Lit extrêmement rare, on dit que Louis XIV a dormi dedans une nuit|15500.0|Lit.png|13
+5|Coussin luxe|Le coussin le plus doux et moelleux du marché|523.0|Coussin.png|14
+6|Plaid luxe|Un plaid d'une qualité premium|845.0|Plaid.png|14
+7|Tv écran incurvé|La télévision la plus performante du marché|4500.0|Tv.png|6
+8|Toilettes connectés|Ces toilettes connectés vous permettrons de surfer sur la toile|150000.0|Papier.png|1
+9|Collier rubis|Collier orné de la pierre de feu, la pierre la plus rare du monde|999999.0|Collier_r.png|10
+10|Collier émeraude|Collier ayant apartenu a l'empereur Chinois Qianlong|50000.0|Collier_v.png|10

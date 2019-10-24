@@ -38,6 +38,10 @@
 
        <h3>Caractéristiques</h3>
        <p>test</p>
+
+       <h3>Prix</h3>
+       <p><?= $article->getPrix()?> €</p>
+
      </div>
 
 
