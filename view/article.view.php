@@ -31,7 +31,7 @@
      </div>
 
      <div class="descArticle">
-       <h2><?= $article->getIntitule() ?> de la catégorie : <a href="../controler/categorie?Id=<?= $categorie->getId()?>"><?= $categorie->getIntitule() ?></a> </h2> <br> <br> <br> 
+       <h2><?= $article->getIntitule() ?> de la catégorie : <a href="../controler/categorie.ctrl.php?Id=<?= $categorie->getId()?>"><?= $categorie->getIntitule() ?></a> </h2> <br> <br> <br>
 
        <h3>Description</h3>
        <p><?= $article->getTexteD() ?></p>

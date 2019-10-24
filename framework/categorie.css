@@ -1,0 +1,46 @@
+/* Fond du site*/
+
+body{
+background :linear-gradient( to bottom ,gray,silver,LightCyan,Snow    );
+}
+
+/* Header barre de navigation */
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+ header nav li {
+  float: left;
+  border-right:1px solid #bbb;
+  text-decoration: none;
+}
+
+header nav li:last-child {
+  border-right: none;
+}
+
+header nav li a {
+
+  display: block;
+  color: #bbb;;
+  background-color: #111;
+  text-align: center;
+  padding: 14px 16px;
+
+}
+header nav li a:hover {
+  background-color: gold;
+}
+
+
+/*Description Categorie*/
+
+img{
+  width:500px;
+  height:500px;
+}

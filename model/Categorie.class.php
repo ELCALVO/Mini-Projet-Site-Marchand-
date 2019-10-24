@@ -8,7 +8,7 @@ class Categorie {
   private $taxe;           // Taux de TVA de la catégorie
 
   //Getteurs
-  function getId() : string {
+  function getId() : int {
     return $this->id;
   }
 
@@ -24,13 +24,13 @@ class Categorie {
     return $this->taxe;
   }
 
-
   function afficherElements($array) : void{
     foreach($array as $key){
       $image = $key->getVisu();
       $nom = $key->getIntitule();
-      echo"<h3> $nom</h3>";
-      echo"<img src=\"../ressources/$image\" alt=\"$nom\">";
+      $ref = $key->getRef();
+      echo"<a href=\"../controler/article.ctrl.php?ref=$ref\"><h3> $nom</h3></a>";
+      echo"<a href=\"../controler/article.ctrl.php?ref=$ref\"><img src=\"../ressources/$image\" alt=\"$nom\" width:500 height:500></a>";
     }
   }
 }

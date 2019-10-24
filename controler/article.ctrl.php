@@ -30,7 +30,7 @@ else{
 }
 
 for ($i=0; $i < sizeof($categories) ; $i++) {
-  if($article->getCategorie()==$categories[$i]->getId() ||$article->getCategorie() == $categorie[$i]->getCategorieM()){
+  if($article->getCategorie()==$categories[$i]->getId()){
       $categorie = $categories[$i];
     }
 }

@@ -27,11 +27,24 @@ else{
   $categorie = $categories[0];
 }
 
+if($categorie->getId()==1){
+    $articleCat=$articles;
+
+}
+else{
 for ($i=0; $i < sizeof($articles) ; $i++) {
-  if($categorie->getId()==$articles[$i]->getCategorie()){
+
+
+  if($categorie->getId()==$articles[$i]->getCategorie() || $articles[$i]->getCategorie() == $categorie->getCategorieM()){
+      var_dump($categorie->getCategorieM());
+      var_dump($categorie->getId());
       array_push($articleCat,$articles[$i]);
     }
+
+  }
 }
+
+
 
 include('../view/categorie.view.php');
  ?>
