@@ -95,18 +95,18 @@
         <div class="premiereLigne">
             <div class="premierItem">
               <div class="Image">
-              <a href="#High-Tech"> <img src="../ressources/iphone12.png" alt="iPhone 11 pro max"> </a>
+              <a href="#High-Tech"> <img src="../ressources/<?=$catAccueil[0]->getVisu()?>" alt="iPhone 11 pro max"> </a>
               </div>
                 <div class="Nom">
-                <a href="#High-Tech"><p>High-Tech</p></a>
+                <a href="#High-Tech"><p>Coussin, plaid & pouf</p></a>
               </div>
             </div>
             <div class="deuxiemeItem">
               <div class="Image">
-                <a href="#Mobilier">  <img src="../ressources/fauteuilMassant2.png" alt="fauteuil Massant"> </a>
+                <a href="#Mobilier">  <img src="../ressources/<?=$catAccueil[1]->getVisu()?>" alt="fauteuil Massant"> </a>
               </div>
                 <div class="Nom">
-                <a href="#Mobilier"> <p>Mobilier</p> </a>
+                <a href="#Mobilier"> <p>Télévisions</p> </a>
               </div>
             </div>
         </div>
@@ -115,18 +115,18 @@
         <div class="premiereLigne">
             <div class="premierItem">
               <div class="Image">
-              <a href="#Electro-Menager"> <img src="../ressources/Frigo1.png" alt="test"> </a>
+              <a href="#Electro-Menager"> <img src="../ressources/<?=$catAccueil[2]->getVisu()?>" alt="test"> </a>
               </div>
                 <div class="Nom">
-                  <a href="#Electro-Menager"><p>Eléctro-Ménager</p> </a>
+                  <a href="#Electro-Menager"><p>Colliers</p> </a>
               </div>
             </div>
             <div class="deuxiemeItem">
               <div class="Image">
-                <a href="#Bijoux">  <img src="../ressources/bijou1.png" alt="test"> </a>
+                <a href="#Bijoux">  <img src="../ressources/<?=$catAccueil[3]->getVisu()?>" alt="test"> </a>
               </div>
                 <div class="a-section a-spacing-none a-text-center image-label truncate-2line">
-                <a href="#Bijoux"> <p>Bijoux</p></a>
+                <a href="#Bijoux"> <p>Tables & chaises</p></a>
               </div>
             </div>
         </div>
@@ -149,16 +149,15 @@
                 <a href="#iPhone11">  <img src="../ressources/iphone12.png" alt="test"> </a>
               </div>
                 <div class="Nom">
-                <a href="#Categories-HighTech"><p>High-Tech</p></a>
+                <a href="#Categories-HighTech">High-Tech</a>
               </div>
             </div>
-
             <div class="deuxiemeItem">
               <div class="Image">
-                <a href="#Fauteuil"><img src="../ressources/fauteuilMassant2.png" alt="Mobilier Image"></a>
+                <a href="#Mobilier"><img src="../ressources/fauteuilMassant2.png" alt="Mobilier Image"></a>
               </div>
                 <div class="Nom">
-                  <a href="#Fauteuil"><p> Le Fauteuil Massant</p> </a>
+                <p> le fauteuil Massant</p>
               </div>
             </div>
         </div>
@@ -173,17 +172,18 @@
                 <a href="#Frigo1"> <p>Frigo connecté</p> </a>
               </div>
             </div>
-
             <div class="deuxiemeItem">
               <div class="Image">
-                <a href="#Bague"><img src="../ressources/bijou1.png" alt="test"> </a>
+                <img src="../ressources/bijou1.png" alt="test">
               </div>
                 <div class="a-section a-spacing-none a-text-center image-label truncate-2line">
-                  <a href="#Bague"><p>Bague en diamant</p></a>
+                <p>Bague en diamant</p>
               </div>
             </div>
         </div>
+
       </div>
+
     </article>
   </div>
 </div>
