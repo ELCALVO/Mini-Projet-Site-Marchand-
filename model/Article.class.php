@@ -54,5 +54,8 @@ class Article {
     }
     $this->caracteristiques[$i]=$car;
   }
+
+
+
 }
 ?>

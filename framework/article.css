@@ -41,42 +41,8 @@ header nav li a:hover {
 }
 
 
-/*Pour le carousel */
+/*Description Article*/
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  margin: auto;
-}
-
-.container{
-  margin-bottom: 100px;
-}
-
-
-/*Categorie*/
-.Categorie{
-margin-left: 250px;
-
-
-}
-
-.premiereLigne{
+.article{
   display: flex;
-}
-
-.Image img{
-  width: 153.50px;
-  height: 150px;
-}
-.containerCategorie div div div a{
-  text-align: center;
-}
-
-.affichage {
-  display: flex;
-  justify-content: space-between;
-}
-
-.Produit{
-  margin-right: 250px;
 }
