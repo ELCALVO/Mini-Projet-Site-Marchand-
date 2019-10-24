@@ -149,15 +149,16 @@
                 <a href="#iPhone11">  <img src="../ressources/iphone12.png" alt="test"> </a>
               </div>
                 <div class="Nom">
-                <a href="#Categories-HighTech">High-Tech</a>
+                <a href="#Categories-HighTech"><p>High-Tech</p></a>
               </div>
             </div>
+
             <div class="deuxiemeItem">
               <div class="Image">
-                <a href="#Mobilier"><img src="../ressources/fauteuilMassant2.png" alt="Mobilier Image"></a>
+                <a href="#Fauteuil"><img src="../ressources/fauteuilMassant2.png" alt="Mobilier Image"></a>
               </div>
                 <div class="Nom">
-                <p> le fauteuil Massant</p>
+                  <a href="#Fauteuil"><p> Le Fauteuil Massant</p> </a>
               </div>
             </div>
         </div>
@@ -172,18 +173,17 @@
                 <a href="#Frigo1"> <p>Frigo connecté</p> </a>
               </div>
             </div>
+
             <div class="deuxiemeItem">
               <div class="Image">
-                <img src="../ressources/bijou1.png" alt="test">
+                <a href="#Bague"><img src="../ressources/bijou1.png" alt="test"> </a>
               </div>
                 <div class="a-section a-spacing-none a-text-center image-label truncate-2line">
-                <p>Bague en diamant</p>
+                  <a href="#Bague"><p>Bague en diamant</p></a>
               </div>
             </div>
         </div>
-
       </div>
-
     </article>
   </div>
 </div>
