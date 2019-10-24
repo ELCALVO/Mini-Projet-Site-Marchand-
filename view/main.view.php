@@ -37,7 +37,7 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active" id="pls">
-          <img src="../ressources/iphone12.png" alt="iphone" width="300px" height="300px">
+          <img src=<?= $artCarousel[0]->getVisu() ?> alt=<?= $artCarousel[0]->getIntitule() ?>  width="300px" height="300px">
           <div class="carousel-caption">
             <h3>iPhone 11 Pro Max 512 Go</h3>
             <p>L'iPhone 11 Pro Max 512 Go est l'un des meilleurs smartphone disponible sur le marché</p>
@@ -45,7 +45,7 @@
         </div>
 
         <div class="item">
-          <img src="../ressources/fauteuilMassant2.png" alt="Fauteuil Massant" width="250px" height="250px">
+          <img src=<?= $artCarousel[1]->getVisu() ?> alt=<?= $artCarousel[1]->getIntitule() ?>  width="250px" height="250px">
           <div class="carousel-caption">
             <h3>Fauteuil Massant</h3>
             <p>Ce fauteuil Massant sera là pour vous apres une longue journée de travail.</p>
@@ -53,7 +53,7 @@
         </div>
 
         <div class="item">
-          <img src="../ressources/Frigo1.png" alt="Flower" width="400px" height="400px">
+          <img src=<?= $artCarousel[2]->getVisu() ?> alt=<?= $artCarousel[2]->getIntitule() ?>  width="400px" height="400px">
           <div class="carousel-caption">
             <h3>Frigo connecté</h3>
             <p>Ce frigo connecté est à la pointe de la technologie.</p>
@@ -61,7 +61,7 @@
         </div>
 
         <div class="item">
-          <img src="../ressources/bijou1.png" alt="Flower" width="300px" height="250px">
+          <img src=<?= $artCarousel[3]->getVisu() ?> alt=<?= $artCarousel[3]->getIntitule() ?>  width="300px" height="250px">
           <div class="carousel-caption">
             <h3>Bague en diamant</h3>
             <p>Magnifique bague ornée de diamants.</p>
