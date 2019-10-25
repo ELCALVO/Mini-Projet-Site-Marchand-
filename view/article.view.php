@@ -24,28 +24,35 @@
 
   </header>
 
-    <div class="article">
-      <a href="../controler/main.ctrl.php">Retour</a>
-      <div class="image">
-          <img src="../ressources/<?= $article->getVisu() ?>" alt=<?= $article->getIntitule() ?>>
-     </div>
+    <div class="">
 
-     <div class="descArticle">
-       <h2><?= $article->getIntitule() ?> de la catégorie : <a href="../controler/categorie.ctrl.php?Id=<?= $categorie->getId()?>"><?= $categorie->getIntitule() ?></a> </h2> <br> <br> <br>
 
-       <h3>Description</h3>
-       <p><?= $article->getTexteD() ?></p>
-
-       <h3>Caractéristiques</h3>
-       <p>test</p>
-
-       <h3>Prix</h3>
-       <p><?= $article->getPrix()?> €</p>
-
-     </div>
+    <h2><?= $article->getIntitule() ?> de la catégorie : <a href="../controler/categorie.ctrl.php?Id=<?= $categorie->getId()?>"><?= $categorie->getIntitule() ?></a> </h2> <br> <br> <br>
 
     </div>
+    <div class="article">
 
+
+
+        <div class="image">
+          <img src="../ressources/<?= $article->getVisu() ?>" alt=<?= $article->getIntitule() ?>>
+        </div>
+
+
+        <div class="descArticle">
+
+
+          <h3>Description</h3>
+          <p><?= $article->getTexteD() ?></p>
+
+          <h3>Caractéristiques</h3>
+          <p>test</p>
+
+          <h3>Prix</h3>
+          <p><?= $article->getPrix()?> €</p>
+
+        </div>
+    </div>
 
     <div class="Commentaires">
       <h3>Avis des acheteurs :</h3> <br> <br> <br>

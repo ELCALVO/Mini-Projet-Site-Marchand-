@@ -40,6 +40,9 @@ header nav li a:hover {
 
 /*Description Article*/
 
+div h2{
+  margin-left: 200px;
+}
 .article{
   display: flex;
   margin-left: 200px;
