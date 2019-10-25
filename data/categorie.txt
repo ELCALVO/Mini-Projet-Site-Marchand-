@@ -1,5 +1,5 @@
 1|Produits|1|0.2
-2|Produits Technologiques|1|0.2
+2|High-Tech|1|0.2
 3|Électroménager|2|0.2
 4|Ordinateurs|2|0.2
 5|Smartphone|2|0.2

@@ -31,7 +31,7 @@
 
     <?= $categorie->afficherElements($articleCat); ?>
     </div>
-    
+
   </div>
 
 </body>

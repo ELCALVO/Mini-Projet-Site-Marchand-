@@ -9,3 +9,6 @@
 9|Collier rubis|Collier orné de la pierre de feu, la pierre la plus rare du monde|999999.0|Collier_r.png|10
 10|Collier émeraude|Collier ayant apartenu a l'empereur Chinois Qianlong|50000.0|Collier_v.png|10
 11|T-Shirt|T-shirt en coton très à la mode chez les jeunes|250|tshirt.png|15
+12|iPhone11 Pro Max 512 Go|L'un des meilleurs Smartphones du marché|999|iPhone11.png|5
+13|OnePlus7|Un smartphone d'une qualité incroyable pour un prix battant toute concurrence|499|onePlus7.png|5
+14|Hp Spectre|Cet ordinateur est le plus élégant du marché, et ses performances sont époustouflantes|1499|HP_Spectre.png|4

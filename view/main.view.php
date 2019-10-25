@@ -95,18 +95,18 @@
         <div class="premiereLigne">
             <div class="premierItem">
               <div class="Image">
-              <a href="#High-Tech"> <img src="../ressources/<?=$catAccueil[0]->getVisu()?>" alt="iPhone 11 pro max"> </a>
+              <a href="../controler/categorie.ctrl.php?Id=<?= $catAccueil[0]->getCategorie()?>"> <img src="../ressources/<?=$catAccueil[0]->getVisu()?>" alt="Coussin, plaid & pouf"> </a>
               </div>
                 <div class="Nom">
-                <a href="#High-Tech"><p>Coussin, plaid & pouf</p></a>
+                <a href="../controler/categorie.ctrl.php?Id=<?= $catAccueil[0]->getCategorie()?>"><p>Coussin, plaid & pouf</p></a>
               </div>
             </div>
             <div class="deuxiemeItem">
               <div class="Image">
-                <a href="#Mobilier">  <img src="../ressources/<?=$catAccueil[1]->getVisu()?>" alt="fauteuil Massant"> </a>
+                <a href="../controler/categorie.ctrl.php?Id=<?= $catAccueil[1]->getCategorie()?>">  <img src="../ressources/<?=$catAccueil[1]->getVisu()?>" alt="Télévisions"> </a>
               </div>
                 <div class="Nom">
-                <a href="#Mobilier"> <p>Télévisions</p> </a>
+                <a href="../controler/categorie.ctrl.php?Id=2"> <p>High-Tech</p> </a>
               </div>
             </div>
         </div>
@@ -115,18 +115,18 @@
         <div class="premiereLigne">
             <div class="premierItem">
               <div class="Image">
-              <a href="#Electro-Menager"> <img src="../ressources/<?=$catAccueil[2]->getVisu()?>" alt="test"> </a>
+              <a href="../controler/categorie.ctrl.php?Id=<?= $catAccueil[2]->getCategorie()?>"> <img src="../ressources/<?=$catAccueil[2]->getVisu()?>" alt="Colliers"> </a>
               </div>
                 <div class="Nom">
-                  <a href="#Electro-Menager"><p>Colliers</p> </a>
+                  <a href="../controler/categorie.ctrl.php?Id=<?= $catAccueil[2]->getCategorie()?>"><p>Colliers</p> </a>
               </div>
             </div>
             <div class="deuxiemeItem">
               <div class="Image">
-                <a href="#Bijoux">  <img src="../ressources/<?=$catAccueil[3]->getVisu()?>" alt="test"> </a>
+                <a href="../controler/categorie.ctrl.php?Id=<?= $catAccueil[3]->getCategorie()?>">  <img src="../ressources/<?=$catAccueil[3]->getVisu()?>" alt="Tables & Chaises"> </a>
               </div>
                 <div class="a-section a-spacing-none a-text-center image-label truncate-2line">
-                <a href="#Bijoux"> <p>Tables & chaises</p></a>
+                <a href="../controler/categorie.ctrl.php?Id=<?= $catAccueil[3]->getCategorie()?>"> <p>Tables & chaises</p></a>
               </div>
             </div>
         </div>

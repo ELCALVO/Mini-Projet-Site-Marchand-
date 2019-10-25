@@ -30,8 +30,20 @@ class Categorie {
       $nom = $key->getIntitule();
       $ref = $key->getRef();
       echo"<a href=\"../controler/article.ctrl.php?ref=$ref\"><h3> $nom</h3></a>";
-      echo"<a href=\"../controler/article.ctrl.php?ref=$ref\"><img src=\"../ressources/$image\" alt=\"$nom\" width:500 height:500></a>";
+      echo"<a href=\"../controler/article.ctrl.php?ref=$ref\"><img src=\"../ressources/$image\" alt=\"$nom\"></a>";
     }
+  }
+
+
+  function getCategoriesF($array) : array {
+    $catF = array();
+    array_push($catF,$this);
+    foreach($array as $key){
+      if($this->getId() == $key->getCategorieM()){
+        array_push($catF,$key);
+      }
+    }
+      return $catF;
   }
 }
 ?>

@@ -39,8 +39,15 @@ header nav li a:hover {
 
 
 /*Description Categorie*/
+.images{
+  display: flex;
+}
 
+h3{
+  display: none;
+}
 img{
-  width:500px;
-  height:500px;
+  width:250px;
+  height:250px;
+
 }

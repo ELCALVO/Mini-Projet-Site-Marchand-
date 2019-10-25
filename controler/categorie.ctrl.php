@@ -14,6 +14,7 @@ $caracteristiques = $produits->getCaracteristiques();
 
 $i=0;
 $articleCat = array();
+$catFilles = array();
 if(isset($_GET['Id'])){
   $Id = $_GET['Id'];
   foreach ($categories as $value) {
@@ -32,15 +33,14 @@ if($categorie->getId()==1){
 
 }
 else{
-for ($i=0; $i < sizeof($articles) ; $i++) {
-
-
-  if($categorie->getId()==$articles[$i]->getCategorie() || $articles[$i]->getCategorie() == $categorie->getCategorieM()){
-      var_dump($categorie->getCategorieM());
-      var_dump($categorie->getId());
+  $catFilles= $categorie->getCategoriesF($categories);
+foreach ($catFilles as $key) {
+  for ($i=0; $i < sizeof($articles) ; $i++) {
+    if($key->getId()==$articles[$i]->getCategorie()){
       array_push($articleCat,$articles[$i]);
-    }
+      }
 
+    }
   }
 }
 
