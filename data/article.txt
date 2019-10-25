@@ -12,3 +12,11 @@
 12|iPhone11 Pro Max 512 Go|L'un des meilleurs Smartphones du marché|999|iPhone11.png|5
 13|OnePlus7|Un smartphone d'une qualité incroyable pour un prix battant toute concurrence|499|onePlus7.png|5
 14|Hp Spectre|Cet ordinateur est le plus élégant du marché, et ses performances sont époustouflantes|1499|HP_Spectre.png|4
+15|Mac Book Pro|Cet ordinateur signé apple vous ravira de part son design et sa fluidité|1350|MacBookPro.png|4
+16|Asus VivoBook|L'ordinateur le plus performant du marché|3299|AsusZenBook.png|4
+17|iMac Pro|L'ordinateur le plus puissant d'apple|5499|iMacPro.png|4
+18|Bague en Diamant| Bague parfaite si vous souhaitez vous fiancer|13000|bague.png|9
+19|Dyson Airblade V|Séche main au look futuriste|690|secheMain.png|3
+20|Jean Tendance| Jean au look normal|500|Jean.png|15
+21|Bonnet|Bonnet pur coton|120|Bonnet.png|15
+22|Chaussures|Les chaussures parfaite pour votre enfant|110|Shoes.png|15
