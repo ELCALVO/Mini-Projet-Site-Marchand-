@@ -34,7 +34,7 @@
         </li>
         <li>
           <i class="fas fa-user-edit"></i>
-          <a href="#panier">S'inscrire</a>
+          <a href="../controler/inscription.ctrl.php">S'inscrire</a>
 
         </li>
         <li>
@@ -49,6 +49,10 @@
     </nav>
   </header>
 
+  <div class="cover">
+
+  </div>
+
   <div class="container">
     <h2>Découvrez nos produits :</h2>
     <div id="myCarousel" class="carousel slide">
@@ -62,7 +66,7 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active" id="pls">
-          <img src="../ressources/<?= $artCarousel[0]->getVisu() ?>" alt=<?= $artCarousel[0]->getIntitule() ?>  width="300px" height="300px">
+          <img src="../ressources/<?= $artCarousel[0]->getVisu() ?>" alt=<?= $artCarousel[0]->getIntitule() ?> style="width:400px;height:350px" >
           <div class="carousel-caption">
             <h3><?= $artCarousel[0]->getIntitule() ?></h3>
             <p><?= $artCarousel[0]->getTexteD() ?></p>
@@ -70,7 +74,7 @@
         </div>
 
         <div class="item">
-          <img src="../ressources/<?= $artCarousel[1]->getVisu() ?>" alt=<?= $artCarousel[1]->getIntitule() ?>  width="250px" height="250px">
+          <img src="../ressources/<?= $artCarousel[1]->getVisu() ?>" alt=<?= $artCarousel[1]->getIntitule() ?> style="width:400px;height:350px"  >
           <div class="carousel-caption">
             <h3><?= $artCarousel[1]->getIntitule() ?></h3>
             <p><?= $artCarousel[1]->getTexteD() ?></p>
@@ -78,7 +82,7 @@
         </div>
 
         <div class="item">
-          <img src="../ressources/<?= $artCarousel[2]->getVisu() ?>" alt=<?= $artCarousel[2]->getIntitule() ?>  width="400px" height="400px">
+          <img src="../ressources/<?= $artCarousel[2]->getVisu() ?>" alt=<?= $artCarousel[2]->getIntitule() ?> style="width:400px;height:350px" >
           <div class="carousel-caption">
             <h3><?= $artCarousel[2]->getIntitule() ?></h3>
             <p><?= $artCarousel[2]->getTexteD() ?></p>
@@ -86,7 +90,7 @@
         </div>
 
         <div class="item">
-          <img src="../ressources/<?= $artCarousel[3]->getVisu() ?>" alt=<?= $artCarousel[3]->getIntitule() ?>  width="300px" height="250px">
+          <img src="../ressources/<?= $artCarousel[3]->getVisu() ?>" alt=<?= $artCarousel[3]->getIntitule() ?> style="width:400px;height:350px" >
           <div class="carousel-caption">
             <h3><?= $artCarousel[3]->getIntitule() ?></h3>
             <p><?= $artCarousel[3]->getTexteD() ?></p>

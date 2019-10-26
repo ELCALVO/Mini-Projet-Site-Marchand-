@@ -8,6 +8,11 @@ require_once("../model/Article.class.php");
 class DAO{
   private $db;                                      //Objet local PDO de la base de données
   private $database = 'sqlite:../data/database.db'; //Type,chemin et nom de la base de données
+  private $n;
+  private $pr;
+  private $ps;
+  private $pswd;
+  private $mail;
 
   //Fonction pour ouvrir la base de données
   function __construct() {
@@ -43,6 +48,26 @@ class DAO{
     $caracteristiques = $resultat->fetchAll(PDO::FETCH_CLASS,"Caracteristique");
 
     return $caracteristiques;
+  }
+
+  function insertMembre($array) : void {
+    $this->n    = $array['nom'];
+    $this->pr   = $array['prenom'];
+    $this->ps   = $array['pseudo'];
+    $this->pswd = $array['pass'];
+    $this->email = $array['email'];
+
+     $req =$this->db->prepare("INSERT INTO membres(nom,prenom,pseudo,pass,email)
+                          VALUES (:nom,:prenom,:pseudo,:pass,:email)");
+    var_dump($req);
+   $req->execute(array
+                  ('nom' =>$this->n,
+                  'prenom' => $this->pr,
+                  'pseudo' => $this->ps,
+                  'pass' => $this->pswd,
+                  'email' => $this->email
+                ));
+
   }
 
 }

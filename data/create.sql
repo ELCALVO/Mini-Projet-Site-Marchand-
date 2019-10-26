@@ -1,6 +1,7 @@
 drop table article;
 drop table categorie;
 drop table caracteristique;
+drop table membres;
 
 
 CREATE TABLE caracteristique (
@@ -30,3 +31,13 @@ CREATE TABLE article (
   FOREIGN KEY(categorie) REFERENCES categorie(idCat),
   FOREIGN KEY(categorie) REFERENCES caracteristique(idCarac)
   );
+
+CREATE TABLE membres (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nom TEXT,
+  prenom TEXT,
+  pseudo TEXT,
+  pass TEXT,
+  email TEXT,
+  date_inscription date
+);

@@ -53,43 +53,12 @@ header nav ul li:hover .sous-menu1 ul{
   margin: 10px;
 
 }
-/*Pour le carousel */
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  margin: auto;
-  width: 250px;
-  height: 250px;
-}
-
-.container{
-  margin-bottom: 100px;
-}
-
-
-/*Categorie*/
-.Categorie{
-margin-left: 25%;
+h2{
+  font-weight: bold;
 
 }
 
-.premiereLigne{
-  display: flex;
-}
-
-.Image img{
-  width: 153.50px;
-  height: 150px;
-}
-.containerCategorie div div div a{
-  text-align: center;
-}
-
-.affichage {
-  display: flex;
-  justify-content: space-between;
-}
-
-.Produit{
-  margin-right: 25%;
+.Recap{
+  margin-left:42.5%;
 }

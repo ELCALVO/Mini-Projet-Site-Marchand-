@@ -35,7 +35,7 @@
 
         <li>
           <i class="fas fa-user-edit"></i>
-          <a href="#panier">S'inscrire</a>
+          <a href="../controler/inscription.ctrl.php">S'inscrire</a>
 
         </li>
         <li>

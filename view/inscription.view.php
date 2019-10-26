@@ -4,7 +4,7 @@
   <title>Site de produit de LUXE</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../framework/categorie.css"/>
+  <link rel="stylesheet" href="../framework/inscription.css"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -53,15 +53,51 @@
 
   </header>
 
-  <div class="Categories">
-    <h2>Voici tous les articles de la catégorie <?= $categorie->getIntitule()?></h2> <br> <br>
-    <div class="images">
 
+  <section>
+    <div class="Formulaire">
+      <h2>Formulaire d'inscription :</h2>
+      <form method="post" action="recap.ctrl.php">
+        <p>
+          <label for="nom">Votre nom :</label>
+          <input type="text" name="nom" />
+        </p>
 
-    <?= $categorie->afficherElements($articleCat); ?>
+        <p>
+          <label for="prenom">Votre Prenom :</label>
+          <input type="text" name="prenom" />
+        </p>
+
+        <p>
+          <label for="pseudo">Votre pseudo :</label>
+          <input type="text" name="pseudo" />
+        </p>
+
+        <p>
+          <label for="mdp">Votre mot de passe :</label>
+          <input type="password" name="mdp" />
+        </p>
+
+        <p>
+          <label for="mail">Votre adresse mail :</label>
+          <input type="email" name="email" />
+        </p>
+
+        <p>
+          <input type="submit" name="valider" />
+        </p>
+
+      </form>
     </div>
+  </section>
 
-  </div>
+
+
+
+
+
+
+
+
 
 </body>
-</html>
