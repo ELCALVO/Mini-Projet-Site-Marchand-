@@ -55,16 +55,15 @@
     </nav>
 
   </header>
+<section>
+    <div class="Categories">
+      <h2>Voici tous les articles de la catégorie <?= $categorie->getIntitule()?></h2> <br> <br>
+      <div class="images">
+      <?= $categorie->afficherElements($articleCat); ?>
+      </div>
 
-  <div class="Categories">
-    <h2>Voici tous les articles de la catégorie <?= $categorie->getIntitule()?></h2> <br> <br>
-    <div class="images">
-
-
-    <?= $categorie->afficherElements($articleCat); ?>
     </div>
 
-  </div>
-
+  </section>
 </body>
 </html>

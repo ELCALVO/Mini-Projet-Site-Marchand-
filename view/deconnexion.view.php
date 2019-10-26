@@ -55,10 +55,14 @@
 
   <section>
       <h2>Deconnexion Reussie</h2>
-      <div class="retour">
-        <a href="../controler/main.ctrl.php">Page d'Accueil</a>
-      </div>
+      <section>
 
+        <div class="retour">
+          <a href="../controler/main.ctrl.php">Page d'Accueil</a>
+        </div>
+
+
+      </section>
   </section>
 
 
