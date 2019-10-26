@@ -4,7 +4,7 @@
   <title>Site de produit de LUXE</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../framework/categorie.css"/>
+  <link rel="stylesheet" href="../framework/connexionReussie.css"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -26,45 +26,48 @@
             <ul>
               <?= $categorie->afficherCategories($categories); ?>
             </ul>
+
           </div>
         </li>
+
         <li>
           <i class="fa fa-shopping-cart"></i>
           <a href="#panier">Panier</a>
         </li>
+
+        <li>
+          <i class="fas fa-user-edit"></i>
+          <a href="../controler/inscription.ctrl.php">S'inscrire</a>
+
+        </li>
+        <li>
+          <i class="fa fa-user-circle"></i>
+          <a href="../controler/connexion.ctrl.php">Connexion</a>
+        </li>
         <li>
           <i class="fa fa-phone"></i>
           <a href="#about">Contact</a>
-        </li>
-        <li style="float:right">
-          <i class="fas fa-user-edit"></i>
-          <a href="#"><?= $_SESSION['pseudo'] ?></a>
-          <i class="fa fa-chevron-down"></i>
-          <div class="sous-menu1">
-            <ul>
-              <i class="fa fa-user"></i>
-              <a href="#">Profil</a>
-            </ul>
-            <ul>
-              <i class="fa fa-power-off"></i>
-              <a href="#">Deconnexion</a>
-            </ul>
-          </div>
         </li>
       </ul>
     </nav>
 
   </header>
 
-  <div class="Categories">
-    <h2>Voici tous les articles de la catégorie <?= $categorie->getIntitule()?></h2> <br> <br>
-    <div class="images">
+  <section>
+      <h2>Deconnexion Reussie</h2>
+      <div class="retour">
+        <a href="../controler/main.ctrl.php">Page d'Accueil</a>
+      </div>
+
+  </section>
 
 
-    <?= $categorie->afficherElements($articleCat); ?>
-    </div>
 
-  </div>
+
+
+
+
+
+
 
 </body>
-</html>

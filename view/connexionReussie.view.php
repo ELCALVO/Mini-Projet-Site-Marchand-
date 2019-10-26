@@ -44,10 +44,11 @@
         <i class="fa fa-chevron-down"></i>
         <div class="sous-menu1">
           <ul>
+            <i class="fa fa-user"></i>
             <a href="#">Profil</a>
           </ul>
           <ul>
-            <i class="fas fa-power-off"></i>
+            <i class="fa fa-power-off"></i>
             <a href="#">Deconnexion</a>
           </ul>
         </div>
