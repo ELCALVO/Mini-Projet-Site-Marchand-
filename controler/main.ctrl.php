@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once('../model/Categorie.class.php');
 require_once('../model/Article.class.php');
 require_once('../model/Caracteristique.class.php');
@@ -44,6 +45,10 @@ foreach ($articles as $value) {
     $catAccueil[3]=$value;
   }
 }
+  if(isset($_SESSION['pseudo']) && isset($_SESSION['id'])){
+    include('../view/mainConnecte.view.php');
+  }else{
+    include('../view/main.view.php');
+  }
 
-include('../view/main.view.php');
  ?>

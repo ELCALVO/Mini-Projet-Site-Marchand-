@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once('../model/Categorie.class.php');
 require_once('../model/Article.class.php');
 require_once('../model/Caracteristique.class.php');
@@ -37,5 +38,9 @@ for ($i=0; $i < sizeof($categories) ; $i++) {
 
 
 
-include('../view/article.view.php');
+if(isset($_SESSION['pseudo']) && isset($_SESSION['id'])){
+  include('../view/articleConnecte.view.php');
+}else{
+  include('../view/article.view.php');
+}
  ?>

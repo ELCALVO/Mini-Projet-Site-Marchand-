@@ -53,23 +53,12 @@
 
   </header>
 
-
   <section>
     <div class="Formulaire">
-      <h2>Formulaire d'inscription :</h2>
-      <form method="post" action="recap.ctrl.php">
+      <h2>Connectez-Vous :</h2>
+      <form method="post" action="connexionEssai.ctrl.php">
         <p>
-          <label for="nom">Votre nom :</label>
-          <input type="text" name="nom" />
-        </p>
-
-        <p>
-          <label for="prenom">Votre Prenom :</label>
-          <input type="text" name="prenom" />
-        </p>
-
-        <p>
-          <label for="pseudo">Votre pseudo :</label>
+          <label for="nom">Pseudo :</label>
           <input type="text" name="pseudo" />
         </p>
 
@@ -79,12 +68,7 @@
         </p>
 
         <p>
-          <label for="mail">Votre adresse mail :</label>
-          <input type="email" name="email" />
-        </p>
-
-        <p>
-          <input type="submit" name="valider" />
+          <input type="submit" name="Connexion" />
         </p>
 
       </form>

@@ -42,7 +42,7 @@
       </li>
       <li>
         <i class="fa fa-user-circle"></i>
-        <a href="#panier">Connexion</a>
+        <a href="../controler/connexion.ctrl.php">Connexion</a>
       </li>
       <li>
         <i class="fa fa-phone"></i>

@@ -51,15 +51,16 @@ class DAO{
   }
 
   function insertMembre($array) : void {
+    //Creation des variables contenant les information du membre
     $this->n    = $array['nom'];
     $this->pr   = $array['prenom'];
     $this->ps   = $array['pseudo'];
     $this->pswd = $array['pass'];
     $this->email = $array['email'];
-
-     $req =$this->db->prepare("INSERT INTO membres(nom,prenom,pseudo,pass,email)
+    //Preparation de la requete
+    $req =$this->db->prepare("INSERT INTO membres(nom,prenom,pseudo,pass,email)
                           VALUES (:nom,:prenom,:pseudo,:pass,:email)");
-    var_dump($req);
+   //Execution de la requete
    $req->execute(array
                   ('nom' =>$this->n,
                   'prenom' => $this->pr,
@@ -67,8 +68,21 @@ class DAO{
                   'pass' => $this->pswd,
                   'email' => $this->email
                 ));
-
   }
+  function connexionTry($array) : array {
+    $this->ps = $array['pseudo'];
+    $req = $this->db->prepare("SELECT id,pass FROM membres WHERE pseudo=:pseudo");
+    $req->execute(array(
+                  'pseudo' => $this->ps
+    ));
+    $result = $req->fetch();
+    return $result;
+  }
+
+
+
+
+
 
 }
 

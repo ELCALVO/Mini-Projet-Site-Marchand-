@@ -16,11 +16,11 @@
     <h1>NOM DU SITE</h1>
     <nav>
       <ul>
-        <li class="active">
+        <li>
           <i class="fa fa-home"></i>
           <a  href="../controler/main.ctrl.php">Accueil</a>
         </li>
-        <li ><a href="#Categorie">Catégorie</a>
+        <li class="active"><a href="#Categorie">Catégorie</a>
           <i class="fa fa-chevron-down"></i>
           <div class="sous-menu1">
             <ul>
@@ -33,17 +33,22 @@
           <a href="#panier">Panier</a>
         </li>
         <li>
-          <i class="fas fa-user-edit"></i>
-          <a href="../controler/inscription.ctrl.php">S'inscrire</a>
-
-        </li>
-        <li>
-          <i class="fa fa-user-circle"></i>
-          <a href="../controler/connexion.ctrl.php">Connexion</a>
-        </li>
-        <li>
           <i class="fa fa-phone"></i>
           <a href="#about">Contact</a>
+        </li>
+        <li style="float:right">
+          <i class="fas fa-user-edit"></i>
+          <a href="#"><?= $_SESSION['pseudo'] ?></a>
+          <i class="fa fa-chevron-down"></i>
+          <div class="sous-menu1">
+            <ul>
+              <a href="#">Profil</a>
+            </ul>
+            <ul>
+              <i class="fas fa-power-off"></i>
+              <a href="#">Deconnexion</a>
+            </ul>
+          </div>
         </li>
       </ul>
     </nav>
