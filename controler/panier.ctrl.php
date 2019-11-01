@@ -32,5 +32,10 @@ foreach($refs as $ref){
 }
 
 //var_dump($articlesPanier);
-include('../view/panier.view.php');
+if(isset($_SESSION['pseudo']) && isset($_SESSION['id'])){
+  include('../view/panierConnecte.view.php');
+}else{
+  include('../view/panier.view.php');
+}
+
 ?>

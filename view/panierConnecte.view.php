@@ -32,19 +32,24 @@
           <i class="fa fa-shopping-cart"></i>
           <a href="../controler/panier.ctrl.php">Panier</a>
         </li>
-
-        <li>
-          <i class="fas fa-user-edit"></i>
-          <a href="../controler/inscription.ctrl.php">S'inscrire</a>
-
-        </li>
-        <li>
-          <i class="fa fa-user-circle"></i>
-          <a href="../controler/connexion.ctrl.php">Connexion</a>
-        </li>
         <li>
           <i class="fa fa-phone"></i>
           <a href="#about">Contact</a>
+        </li>
+        <li style="float:right">
+          <i class="fas fa-user-edit"></i>
+          <a href="#"><?= $_SESSION['pseudo'] ?></a>
+          <i class="fa fa-chevron-down"></i>
+          <div class="sous-menu1">
+            <ul>
+              <i class="fa fa-user"></i>
+              <a href="#">Profil</a>
+            </ul>
+            <ul>
+              <i class="fa fa-power-off"></i>
+              <a href="../controler/deconnexion.ctrl.php">Deconnexion</a>
+            </ul>
+          </div>
         </li>
       </ul>
     </nav>

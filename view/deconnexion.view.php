@@ -24,7 +24,7 @@
           <i class="fa fa-chevron-down"></i>
           <div class="sous-menu1">
             <ul>
-              <?= $categorie->afficherCategories($categories); ?>
+              <?= $produits->afficherCategories($categories); ?>
             </ul>
 
           </div>
@@ -32,7 +32,7 @@
 
         <li>
           <i class="fa fa-shopping-cart"></i>
-          <a href="#panier">Panier</a>
+          <a href="../controler/panier.ctrl.php">Panier</a>
         </li>
 
         <li>

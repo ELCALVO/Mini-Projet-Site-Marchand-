@@ -24,7 +24,7 @@
           <i class="fa fa-chevron-down"></i>
           <div class="sous-menu1">
             <ul>
-              <?= $categorie->afficherCategories($categories); ?>
+              <?= $produits->afficherCategories($categories); ?>
             </ul>
           </div>
         </li>

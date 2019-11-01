@@ -81,6 +81,13 @@ class DAO{
 
 
 
+  function afficherCategories($array) : void{
+    foreach($array as $key){
+      $id = $key->getId();
+      $nom= $key->getIntitule();
+      echo"<li><a href=\"../controler/categorie.ctrl.php?Id=$id\">$nom</a></li>";
+    }
+  }
 
 
 
