@@ -12,8 +12,8 @@ $categories = $produits->getCategories();
 
 $caracteristiques = $produits->getCaracteristiques();
 
+$membres = $produits->getMembres();
 
-$categorie = $categories[1];
 
 
 // creation de l'array contenant les valeurs
@@ -22,16 +22,28 @@ $categorie = $categories[1];
     $resp= array(
       'pseudo' => $pseudo,
     );
-// Vérification de la validité des informations
 
-$resultat = $produits->connexionTry($resp);
+//Verification de la validité des informations
+  $isPseudoOK=0;
+    foreach($membres as $member){
+      if($pseudo == $member->getPseudo()){
+        $isPseudoOK=1;
+      }
+    }
+// Essai de connexion seulement si pseudo dans la bdd
+if($isPseudoOK==1){
+  $resultat = $produits->connexionTry($resp);
+  }
+else{
+  $resultat = 0;
+}
 
 // Verification du mot de passe
 $isPasswordOk = password_verify($_POST['mdp'], $resultat['pass']);
 
 if (!$resultat)
 {
-    echo 'Mauvais identifiant ou mot de passe !';
+    die('Mauvais identifiant ou mot de passe ! <a href="javascript:history.back()"> Retourner a la page de connexion</a>');
 }
 else
 {
@@ -43,7 +55,7 @@ else
         include('../view/connexionReussie.view.php');
     }
     else {
-        echo 'Mauvais identifiant ou mot de passe !';
+        die('Mauvais identifiant ou mot de passe ! <a href="javascript:history.back()"> Retourner a la page de connexion</a>');
     }
 }
 

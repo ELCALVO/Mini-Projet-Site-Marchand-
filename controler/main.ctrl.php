@@ -16,7 +16,6 @@ $categories = $produits->getCategories();
 
 $caracteristiques = $produits->getCaracteristiques();
 
-$categorie = $categories[0];
 //Articles Aléatoires pour le Carousel
 $artCarousel = array();
 shuffle($articles);

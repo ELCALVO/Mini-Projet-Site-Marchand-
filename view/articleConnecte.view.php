@@ -81,6 +81,8 @@
           <h3>Prix</h3>
           <p><?= $article->getPrix()?> €</p>
 
+          <a class="fa fa-shopping-cart" href="../model/addPanier.php?ref=<?= $article->getRef()?>"> Ajouter au panier </a>
+
         </div>
     </div>
 

@@ -14,7 +14,7 @@ $categories = $produits->getCategories();
 $caracteristiques = $produits->getCaracteristiques();
 
 
-$categorie = $categories[1];
+
 
 
 // Vérification de la validité des informations

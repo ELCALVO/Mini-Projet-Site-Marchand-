@@ -14,7 +14,6 @@ $categories = $produits->getCategories();
 
 $caracteristiques = $produits->getCaracteristiques();
 
-$categorie = $categories[0];
 
 // Suppression des variables de session et de la session
 $_SESSION = array();

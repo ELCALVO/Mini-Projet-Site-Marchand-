@@ -13,6 +13,5 @@ $categories = $produits->getCategories();
 $caracteristiques = $produits->getCaracteristiques();
 
 
-$categorie = $categories[1];
 include('../view/inscription.view.php');
  ?>

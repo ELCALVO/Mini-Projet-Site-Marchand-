@@ -20,7 +20,7 @@
           <i class="fa fa-home"></i>
           <a  href="../controler/main.ctrl.php">Accueil</a>
         </li>
-        <li class="active"><a href="#Categorie">Catégorie</a>
+        <li><a href="#Categorie">Catégorie</a>
           <i class="fa fa-chevron-down"></i>
           <div class="sous-menu1">
             <ul>
@@ -28,7 +28,7 @@
             </ul>
           </div>
         </li>
-        <li>
+        <li class="active">
           <i class="fa fa-shopping-cart"></i>
           <a href="../controler/panier.ctrl.php">Panier</a>
         </li>
@@ -102,8 +102,10 @@
               <?php } ?>
   					</tbody>
   				</table>
+
   			</div>
 
+        <a href="../controler/recapPanier.ctrl">Commander</a>
         <script type="text/javascript">
       $('.minus-btn').on('click', function(e) {
     		e.preventDefault();

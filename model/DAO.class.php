@@ -3,6 +3,7 @@
 require_once("../model/Categorie.class.php");
 require_once("../model/Caracteristique.class.php");
 require_once("../model/Article.class.php");
+require_once("../model/Membre.class.php");
 
 //Classe pour ouvrir la base de données et renvoyer des objets à partir de cette base
 class DAO{
@@ -23,7 +24,7 @@ class DAO{
     }
   }
 
-  //Fonction pour réuperer toutes les catégories
+  //Fonction pour récuperer toutes les catégories
   function getCategories() : array {
     $req = "SELECT * FROM categorie";
     $resultat = $this->db->query($req);
@@ -32,7 +33,7 @@ class DAO{
     return $categories;
   }
 
-  //Fonction pour réuperer tous les articles
+  //Fonction pour récuperer tous les articles
   function getArticles() : array {
     $req = "SELECT * FROM article";
     $resultat = $this->db->query($req);
@@ -41,13 +42,22 @@ class DAO{
     return $articles;
   }
 
-  //Fonction pour réuperer toutes les caractéristiques
+  //Fonction pour récuperer toutes les caractéristiques
   function getCaracteristiques() : array {
     $req = "SELECT * FROM caracteristique";
     $resultat = $this->db->query($req);
     $caracteristiques = $resultat->fetchAll(PDO::FETCH_CLASS,"Caracteristique");
 
     return $caracteristiques;
+  }
+
+  //Fonction pour réuperer tous les membres
+  function getMembres() : array {
+    $req = "SELECT * FROM membres";
+    $resultat = $this->db->query($req);
+    $membres = $resultat->fetchAll(PDO::FETCH_CLASS,"Membre");
+
+    return $membres;
   }
 
   function insertMembre($array) : void {
@@ -71,6 +81,7 @@ class DAO{
   }
   function connexionTry($array) : array {
     $this->ps = $array['pseudo'];
+
     $req = $this->db->prepare("SELECT id,pass FROM membres WHERE pseudo=:pseudo");
     $req->execute(array(
                   'pseudo' => $this->ps
@@ -82,14 +93,42 @@ class DAO{
 
 
   function afficherCategories($array) : void{
-    foreach($array as $key){
-      $id = $key->getId();
-      $nom= $key->getIntitule();
+    foreach($array as $categorie){
+      $id = $categorie->getId();
+      $nom= $categorie->getIntitule();
       echo"<li><a href=\"../controler/categorie.ctrl.php?Id=$id\">$nom</a></li>";
     }
   }
 
 
+  function commandePanier($array) : void {
+    $prixTot=0;
+    echo"<h2> Vous avez commandé : </h2>";
+    foreach($array as $contenuPanier){
+      $img = $contenuPanier->getVisu();
+      $name = $contenuPanier->getIntitule();
+      $price =$contenuPanier->getPrix();
+      echo "<section>";
+        echo "<div>";
+          echo "<div class=\"nom\">";
+            echo" <h3> $name";
+          echo "</div>";
+
+          echo "<div class=\"image\">";
+            echo" <img src=\"../ressources/$img \" alt=$name  >";
+          echo "</div>";
+
+          echo "<div class=\"Prix\">";
+            echo" <h3> Prix : $price € ";
+          echo "</div>";
+
+        echo "</div>";
+      echo "</section>";
+      $prixTot+=$price;
+    }
+
+    echo "<h3> Prix total : $prixTot € TTC</h3>";
+  }
 
 }
 

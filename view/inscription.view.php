@@ -59,28 +59,28 @@
       <h2>Formulaire d'inscription :</h2>
       <form method="post" action="recap.ctrl.php">
         <p>
-          <label for="nom">Votre nom :</label>
-          <input type="text" name="nom" />
+          <label for="nom">Votre nom :*</label>
+          <input type="text" name="nom" required />
         </p>
 
         <p>
-          <label for="prenom">Votre Prenom :</label>
-          <input type="text" name="prenom" />
+          <label for="prenom">Votre Prenom :*</label>
+          <input type="text" name="prenom" required />
         </p>
 
         <p>
-          <label for="pseudo">Votre pseudo :</label>
-          <input type="text" name="pseudo" />
+          <label for="pseudo">Votre pseudo :*</label>
+          <input type="text" name="pseudo" required />
         </p>
 
         <p>
-          <label for="mdp">Votre mot de passe :</label>
-          <input type="password" name="mdp" />
+          <label for="mdp">Votre mot de passe :*</label>
+          <input type="password" name="mdp" required/>
         </p>
 
         <p>
-          <label for="mail">Votre adresse mail :</label>
-          <input type="email" name="email" />
+          <label for="mail">Votre adresse mail :*</label>
+          <input type="email" name="email" required/>
         </p>
 
         <p>
