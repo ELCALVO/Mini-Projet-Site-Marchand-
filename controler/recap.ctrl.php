@@ -17,7 +17,8 @@ $caracteristiques = $produits->getCaracteristiques();
 
 
 
-// Vérification de la validité des informations
+//passwd pas haché
+$pswd = $_POST['mdp'];
 
 // Hachage du mot de passe
 $pass_hache = password_hash($_POST['mdp'], PASSWORD_DEFAULT);
@@ -28,7 +29,6 @@ $pass_hache = password_hash($_POST['mdp'], PASSWORD_DEFAULT);
     $pseudo = $_POST['pseudo'];
     $email = $_POST['email'];
 
-    var_dump($nom);
 
 $resp= array(
     'nom' => $nom,
@@ -37,9 +37,6 @@ $resp= array(
     'pass' => $pass_hache,
     'email' => $email,
     );
-
-
-var_dump($resp['nom']);
 
 
 // Insertion

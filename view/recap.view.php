@@ -62,7 +62,10 @@
       <h2> Votre pseudo : </h2>
         <p><?= $pseudo?></p>
 
-      <h2> Votre mot de passe : </h2>
+      <h2> Votre mot de passe (non-crypté) : </h2>
+        <p><?= $pswd?></p>
+
+      <h2> Votre mot de passe (crypté) : </h2>
         <p><?= $pass_hache?></p>
 
       <h2> Votre email : </h2>
