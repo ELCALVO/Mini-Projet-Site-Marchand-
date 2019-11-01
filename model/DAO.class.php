@@ -6,7 +6,7 @@ require_once("../model/Article.class.php");
 
 //Classe pour ouvrir la base de données et renvoyer des objets à partir de cette base
 class DAO{
-  private $db;                                      //Objet local PDO de la base de données
+  public $db;                                      //Objet local PDO de la base de données
   private $database = 'sqlite:../data/database.db'; //Type,chemin et nom de la base de données
   private $n;
   private $pr;

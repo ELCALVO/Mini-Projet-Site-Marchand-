@@ -30,7 +30,7 @@
         </li>
         <li>
           <i class="fa fa-shopping-cart"></i>
-          <a href="#panier">Panier</a>
+          <a href="../controler/panier.ctrl.php">Panier</a>
         </li>
 
         <li>
@@ -76,6 +76,7 @@
           <h3>Prix</h3>
           <p><?= $article->getPrix()?> €</p>
 
+          <a class="fa fa-shopping-cart" href="../model/addPanier.php?ref=<?= $article->getRef()?>">  </a>
         </div>
     </div>
 

@@ -15,35 +15,17 @@ $articles = $produits->getArticles();
 $categories = $produits->getCategories();
 
 $caracteristiques = $produits->getCaracteristiques();
+$categorie = $categories[0];
 
-$i=0;
 
 if(isset($_GET['ref'])){
-  $ref = $_GET['ref'];
-  foreach ($articles as $value) {
-    if($value->getRef()==$ref){
-        $article = $value;
-    }
-
-
+  foreach($articles as $article){
+      if($_GET['ref'] == $article->getRef()){
+        $produit = $article;
+      }
   }
-
-}
-else{
-  $article = $articles[0];
 }
 
-for ($i=0; $i < sizeof($categories) ; $i++) {
-  if($article->getCategorie()==$categories[$i]->getId()){
-      $categorie = $categories[$i];
-    }
-}
-
-
-
-if(isset($_SESSION['pseudo']) && isset($_SESSION['id'])){
-  include('../view/articleConnecte.view.php');
-}else{
-  include('../view/article.view.php');
-}
+ $panier->removeArticle($produit);
+die('Produit supprimé du panier <a href="javascript:history.back()"> Retourner sur le catalogue</a>');
  ?>

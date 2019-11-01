@@ -30,7 +30,7 @@
         </li>
         <li>
           <i class="fa fa-shopping-cart"></i>
-          <a href="#panier">Panier</a>
+          <a href="../controler/panier.ctrl.php">Panier</a>
         </li>
         <li>
           <i class="fas fa-user-edit"></i>
@@ -100,11 +100,11 @@
       </div>
 
       <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" role="button">
+      <a class="left carousel-control"  role="button">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="right carousel-control" href="#myCarousel" role="button">
+      <a class="right carousel-control"  role="button">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
