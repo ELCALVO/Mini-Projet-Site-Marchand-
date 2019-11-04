@@ -105,7 +105,7 @@
 
   			</div>
 
-        <a href="../controler/recapPanier.ctrl">Commander</a>
+        <a href="../controler/recapPanier.ctrl.php">Commander</a>
         <script type="text/javascript">
       $('.minus-btn').on('click', function(e) {
     		e.preventDefault();
