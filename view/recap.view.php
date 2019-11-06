@@ -13,7 +13,7 @@
 </head>
 <body>
   <header>
-    <h1>NOM DU SITE</h1>
+    <h1>Lux'& Co+</h1>
     <nav>
       <ul>
         <li class="active">
