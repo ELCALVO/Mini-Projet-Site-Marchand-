@@ -1,0 +1,95 @@
+body{
+background :linear-gradient( to bottom ,gray,silver,LightCyan,Snow    );
+}
+
+/* Header */
+
+header nav{
+  background: #111;
+  text-align: center;
+}
+
+header nav ul{
+  display:  inline-flex;
+  list-style: none;
+  color: #fff;
+}
+
+header nav ul li {
+  width:120px;
+  height:50px;
+  padding:15px;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.active, header nav ul li:hover{
+  background: lightgray ;
+  border-radius : 15px;
+}
+
+header nav .fa{
+
+}
+
+.sous-menu1{
+  display: none;
+}
+
+header nav ul li:hover .sous-menu1{
+  display:block;
+  position:absolute;
+  background: #111;
+  margin-top: 15px;
+  z-index: 1;
+
+}
+
+header nav ul li:hover .sous-menu1 ul{
+  display:block;
+  margin: 10px;
+
+}
+/*Pour le carousel */
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  margin: auto;
+  width: 250px;
+  height: 250px;
+}
+
+.container{
+  margin-bottom: 100px;
+}
+
+
+/*Categorie*/
+.Categorie{
+margin-left: 25%;
+
+}
+
+.premiereLigne{
+  display: flex;
+}
+
+.Image img{
+  width: 153.50px;
+  height: 150px;
+}
+.containerCategorie div div div a{
+  text-align: center;
+}
+
+.affichage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Produit{
+  margin-right: 25%;
+}

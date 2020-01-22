@@ -1,0 +1,77 @@
+
+body{
+background :linear-gradient( to bottom ,gray,silver,LightCyan,Snow   );
+box-sizing: border-box;
+}
+
+/* Header barre de navigation */
+header nav{
+  background: #111;
+  text-align: center;
+}
+
+header nav ul{
+  display:  inline-flex;
+  list-style: none;
+  color: #fff;
+}
+
+header nav ul li {
+  width:120px;
+  height:50px;
+  padding:15px;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.active, header nav ul li:hover{
+  background: lightgray ;
+  border-radius : 15px;
+}
+
+header nav .fa{
+
+}
+
+.sous-menu1{
+  display: none;
+}
+
+header nav ul li:hover .sous-menu1{
+  display:block;
+  position:absolute;
+  background: #111;
+  margin-top: 15px;
+
+}
+
+header nav ul li:hover .sous-menu1 ul{
+  display:block;
+  margin: 10px;
+}
+
+
+
+
+h2{
+  text-align: center;
+  font-weight: bold;
+}
+
+.Formulaire{
+  width: 100%;
+  height: 785px;
+  background: url(../ressources/inscription.jpg);
+  display: block;
+  text-align: center;
+
+}
+
+form{
+  display: inline-block;
+  width: 200px;
+  color: black;
+}

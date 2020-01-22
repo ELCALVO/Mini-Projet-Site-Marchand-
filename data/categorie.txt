@@ -1,0 +1,15 @@
+1|Produits|1|0.2
+2|High-Tech|1|0.2
+3|Électroménager|2|0.2
+4|Ordinateurs|2|0.2
+5|Smartphone|2|0.2
+6|Télévision|2|0.2
+7|Appareils Connectés|2|0.2
+8|Bijoux|1|0.2
+9|Bagues|8|0.2
+10|Colliers|8|0.2
+11|Mobilier|1|0.2
+12|Tables & Chaises|11|0.2
+13|Literie|11|0.2
+14|Coussin, plaid & pouf|13|0.2
+15|Textile|1|0.2

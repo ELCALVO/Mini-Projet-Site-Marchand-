@@ -1,0 +1,22 @@
+1|Montre Connectée|Jolie montre|1200000.0|Montre.png|7
+2|Chaise|Chaise extremement confortable, avec un repose tête, qualité premium|1000.0|Chaise.png|12
+3|Fauteuil|Fauteuil massant disposant d'une tablette connecté|5000.0|Fauteuil.png|12
+4|Lit à baldaquins|Lit extrêmement rare, on dit que Louis XIV a dormi dedans une nuit|15500.0|Lit.png|13
+5|Coussin luxe|Le coussin le plus doux et moelleux du marché|523.0|Coussin.png|14
+6|Plaid luxe|Un plaid d'une qualité premium|845.0|Plaid.png|14
+7|Téléviseur Incurvé|La télévision la plus performante du marché|4500.0|Tv.png|6
+8|WC Connecté|Ces toilettes connectés vous permettrons de surfer sur la toile|150000.0|Papier.png|1
+9|Collier rubis|Collier orné de la pierre de feu, la pierre la plus rare du monde|999999.0|Collier_r.png|10
+10|Collier émeraude|Collier ayant apartenu a l'empereur Chinois Qianlong|50000.0|Collier_v.png|10
+11|T-Shirt|T-shirt en coton très à la mode chez les jeunes|250|tshirt.png|15
+12|iPhone11 Pro Max 512 Go|L'un des meilleurs Smartphones du marché|999|iPhone11.png|5
+13|OnePlus7|Un smartphone d'une qualité incroyable pour un prix battant toute concurrence|499|onePlus7.png|5
+14|Hp Spectre|Cet ordinateur est le plus élégant du marché, et ses performances sont époustouflantes|1499|HP_Spectre.png|4
+15|Mac Book Pro|Cet ordinateur signé apple vous ravira de part son design et sa fluidité|1350|MacBookPro.png|4
+16|Asus VivoBook|L'ordinateur le plus performant du marché|3299|AsusZenBook.png|4
+17|iMac Pro|L'ordinateur le plus puissant d'apple|5499|iMacPro.png|4
+18|Bague en Diamant| Bague parfaite si vous souhaitez vous fiancer|13000|bague.png|9
+19|Dyson Airblade V|Séche main au look futuriste|690|secheMain.png|3
+20|Jean Tendance| Jean au look normal|500|Jean.png|15
+21|Bonnet|Bonnet pur coton|120|Bonnet.png|15
+22|Chaussures|Les chaussures parfaite pour votre enfant|110|Shoes.png|15
